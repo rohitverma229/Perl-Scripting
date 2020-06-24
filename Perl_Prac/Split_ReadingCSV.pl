@@ -18,6 +18,8 @@ sub main
     #scaning through all the records
     while(my $line = <INPUT>)
     {
+        #chomp function in perl is used to remove the last trailing newline from the input string.
+        chomp $line;
         #Taking array for storing the data of csv file and split it with ','
         my @data = split ',', $line;
         #printing the data line by line
